@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Next.js Multi-Page Dashboard App
 
-## Getting Started
+A modern **multi-page dashboard application** built using **Next.js (App Router)**.
+This project demonstrates core Next.js concepts like **nested routing, layouts, loading UI, error handling, and dynamic routing**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📌 Features
+
+* ✅ App Router (Next.js latest structure)
+* ✅ Nested Routes (`/dashboard/analytics`, `/dashboard/settings`)
+* ✅ Nested Layouts (Shared Sidebar)
+* ✅ Loading UI (`loading.js`)
+* ✅ Error Handling (`error.js`)
+* ✅ Dynamic Routing (`/blog/[id]`)
+* ✅ Client-side navigation using `Link`
+
+---
+
+## 🏗️ Project Structure
+
+```
+app/
+ ├── layout.js              # Root layout
+ ├── page.js                # Home page
+
+ ├── dashboard/
+ │    ├── layout.js         # Dashboard layout (Sidebar)
+ │    ├── page.js           # Dashboard Home
+ │    ├── loading.js        # Loading UI
+ │    ├── error.js          # Error UI
+ │    ├── analytics/
+ │    │     └── page.js
+ │    ├── settings/
+ │    │     └── page.js
+
+ ├── blog/
+ │    └── [id]/
+ │          └── page.js     # Dynamic route
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Installation & Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repository:
 
-## Learn More
+```
+git clone https://github.com/Malihafatima1/next-dashboard-app.git
+```
 
-To learn more about Next.js, take a look at the following resources:
+2. Navigate to project folder:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+cd next-dashboard-app
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Install dependencies:
 
-## Deploy on Vercel
+```
+npm install
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Run the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+npm run dev
+```
+
+5. Open in browser:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🧪 Routes to Test
+
+* `/` → Home Page
+* `/dashboard` → Dashboard Home
+* `/dashboard/analytics` → Analytics Page
+* `/dashboard/settings` → Settings Page
+* `/blog/1` → Dynamic Blog Page
+
+---
+
+## 🧠 Concepts Covered
+
+* 📂 File-based routing in Next.js
+* 🧩 Layouts and nested layouts
+* 🔄 Client-side navigation
+* ⏳ Loading states
+* ❌ Error boundaries
+* 🔗 Dynamic routes
+
+---
+
+## 🚀 Future Improvements
+
+* Add authentication (Login/Signup)
+* Fetch real data using APIs
+* Improve UI with Tailwind CSS
+* Add database integration
+
+---
+
+## 👩‍💻 Author
+
+**Maliha Fatima**
+
+* MCA Graduate
+* Aspiring Full Stack Developer
+
+---
+
+## ⭐ Acknowledgements
+
+Built as part of learning **Next.js App Router** and modern web development.
